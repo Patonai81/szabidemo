@@ -10,9 +10,9 @@ public class HomeController {
 
 
 
-@GetMapping("/")
+@GetMapping("/home")
 public String getMapping(@RequestParam (required = false , defaultValue = "") String param ){
  System.out.println("Reméljük kkiiírja");
- return "Heyyyyyaaaaaa" +param +"!"+param+"iii";
+ return "Heyyyyyaaaaaa" +param +"!"+param+"iiii";
 }
 }
