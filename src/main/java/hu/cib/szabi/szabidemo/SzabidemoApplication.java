@@ -1,17 +1,27 @@
 package hu.cib.szabi.szabidemo;
 
-import de.flapdoodle.embed.mongo.MongodExecutable;
-import de.flapdoodle.embed.mongo.MongodStarter;
-import de.flapdoodle.embed.mongo.config.IMongodConfig;
-import de.flapdoodle.embed.mongo.config.MongodConfigBuilder;
-import de.flapdoodle.embed.mongo.config.Net;
-import de.flapdoodle.embed.mongo.distribution.Version;
-import de.flapdoodle.embed.process.runtime.Network;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+/**
+ * 1 - Adding devtools to your project
+ * <dependency>
+ *     <groupId>org.springframework.boot</groupId>
+ *     <artifactId>spring-boot-devtools</artifactId>
+ * </dependency>
+ *
+ * 2- Enabling automatic build
+ * Open the Settings --> Build-Execution-Deployment --> Compiler and enable :
+ *
+ *
+ * Build Project Automatically.
+ * 3- Update the value of compiler.automake.allow.when.app.running
+ * press ctrl+shift+A and search for the registry. In the registry, enable :
+ *
+ * compiler.automake.allow.when.app.running
+ *
+ */
 
 @SpringBootApplication
 public class SzabidemoApplication {
