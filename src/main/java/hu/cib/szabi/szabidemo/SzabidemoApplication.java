@@ -1,8 +1,8 @@
 package hu.cib.szabi.szabidemo;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
 
 /**
@@ -25,6 +25,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
  */
 
 @EnableAutoConfiguration
+@ComponentScan("hu.cib.szabi")
 public class SzabidemoApplication {
 
 
